@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Data;
+using API.Interfaces;
+using API.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,35 +12,36 @@ namespace api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class booksController : ControllerBase
+    public class PersonController : ControllerBase
     {
-        // GET: api/books
+        // GET: api/Person
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Person> Get()
         {
-            return new string[] { "value1", "value2", "value3" };
+            IPersonDataHandler DataHandler = new PersonDataHandler();
+            return DataHandler.Select();
         }
 
-        // GET: api/books/5
+        // GET: api/Person/5
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/books
+        // POST: api/Person
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT: api/books/5
+        // PUT: api/Person/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE: api/books/5
+        // DELETE: api/Person/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
