@@ -8,7 +8,7 @@
             "server": "plant-database.mysql.database.azure.com",
             "port": 3306,
             "driver": "MySQL",
-            "database": "plant-database",
+            "database": "plant-plant_database",
             "name": "Quad L&G",
             "username": "QuadLG@plant-database",
             "password": "Password123"

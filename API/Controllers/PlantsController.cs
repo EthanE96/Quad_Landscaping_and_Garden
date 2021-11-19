@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Database;
+using API.Interfaces;
+using API.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,35 +16,61 @@ namespace api.Controllers
     public class PlantsController : ControllerBase
     {
         // GET: api/plants
+        [EnableCors("AnotherPolicy")]
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Plant> Get()
         {
-            return new string[] { "value1", "value2" };
+            IReadPlant readObject = new ReadPlant();
+            return readObject.GetAllPlants();
         }
 
         // GET: api/plants/5
+        [EnableCors("AnotherPolicy")]
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public Plant Get(int id)
         {
-            return "value";
+          IReadPlant readPlant = new ReadPlant();
+          return readPlant.GetPlant(id);
         }
 
         // POST: api/plants
+        [EnableCors("AnotherPolicy")]
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Plant value)
         {
+            ISavePlant newPlant = new SavePlant();
+            newPlant.CreatePlant(value);
         }
 
         // PUT: api/plants/5
+        [EnableCors("AnotherPolicy")]
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] string plantName, [FromBody] string plantDescrip, 
+        [FromBody] int plantWater, [FromBody] int plantSunlight, [FromBody] string season)
         {
+            if (plantName == "reseed")
+            {
+                ISeedPlant seedPlants = new SavePlant();
+                seedPlants.SeedData();
+            }
+            else
+            {
+                ISavePlant savePlant = new SavePlant();
+                savePlant.EditPlant(id, plantName, plantDescrip, plantWater, plantSunlight, season);
+            }
         }
 
         // DELETE: api/plants/5
+        [EnableCors("AnotherPolicy")]
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            IDeletePlant deletePlant = new DeletePlant();
+            deletePlant.RemovePlant(id);
         }
     }
 }
+        //for future reference => 
+        //the [FromBody] is the body: JSON.stringify(value)
+        //the [HttpDelete("{id}")] the added data to the https request ...
+        //which can also be sent to the constructor

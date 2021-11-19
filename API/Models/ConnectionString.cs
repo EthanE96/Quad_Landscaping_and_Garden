@@ -7,7 +7,7 @@ namespace API.Models
         {
             string server = "plant-database.mysql.database.azure.com";
             string port = "3306";
-            string database = "plant-database";
+            string database = "plant_database";
             string uid = "QuadLG@plant-database";
             string pwd = "Password123";
             string sslMode = "Preferred";
