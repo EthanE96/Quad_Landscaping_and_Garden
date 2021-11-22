@@ -1,6 +1,6 @@
 //GET: api/plants
 function AllPlants() {
-  const allPlantsURL = "https://localhost:5001/api/plants/";
+  const allPlantsURL = "https://quadlg-api.herokuapp.com/api/plants";
 
   fetch(allPlantsURL)
     .then(function (respone) {
