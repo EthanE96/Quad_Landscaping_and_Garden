@@ -45,9 +45,9 @@ namespace api.Controllers
         // PUT: api/plants/5
         [EnableCors("AnotherPolicy")]
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string plantName, [FromBody] string plantDescrip, 
-        [FromBody] int plantWater, [FromBody] int plantSunlight, [FromBody] string season)
+        public void Put(int id, [FromBody] string plantName)
         {
+            //need to edit
             if (plantName == "reseed")
             {
                 ISeedPlant seedPlants = new SavePlant();
@@ -55,8 +55,8 @@ namespace api.Controllers
             }
             else
             {
-                ISavePlant savePlant = new SavePlant();
-                savePlant.EditPlant(id, plantName, plantDescrip, plantWater, plantSunlight, season);
+                //ISavePlant savePlant = new SavePlant();
+                //savePlant.EditPlant(id, plantName);
             }
         }
 
