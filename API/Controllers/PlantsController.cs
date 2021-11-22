@@ -47,17 +47,6 @@ namespace api.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string plantName)
         {
-            //need to edit
-            if (plantName == "reseed")
-            {
-                ISeedPlant seedPlants = new SavePlant();
-                seedPlants.SeedData();
-            }
-            else
-            {
-                //ISavePlant savePlant = new SavePlant();
-                //savePlant.EditPlant(id, plantName);
-            }
         }
 
         // DELETE: api/plants/5

@@ -7,58 +7,15 @@
     <link rel="stylesheet" href="Resources/CSS/index.css" />
     <title>Quad L&G</title>
   </head>
-  <body onload="test()">
+  <body onload="AllPlants()">
     <script type="text/javascript" src="Resources/Scripts/index.js"></script>
 
     <!-- Test Section -->
     <h1>Test</h1>
 
     <!-- All Plants Section -->
-    <section id="test"></section>
+    <section id="allPlants"></section>
 
-    <!-- New Plant Section-->
-    <section>
-      <form onsubmit="return false;" method="post">
-        <label for="editPlant">New Plant</label> <br />
-        <input type="text" name="editPlant" id="editPlantName" />
-        <!-- Add the other inputs-->
-        <input type="submit" value="Add" onclick="addPlant()" />
-      </form>
-    </section>
-
-    <br><br><br><br> <!-- Spacing temp-->
-
-    <!-- Edit Plant Section -->
-    <section>
-      <form onsubmit="return false;" method="put">
-        <label for="changeID">Edit Post By ID</label>
-        <input type="text" name="changeID" id="editID" /> <br />
-        <label for="changeName">Edit Text</label>
-        <input type="text" name="changeName" id="editName" /> <br />
-        <!--- Add the other inputs-->
-        <input type="submit" value="Edit" onclick="editPlant()"/>
-      </form>
-    </section>
-
-    <br><br><br><br> <!-- Spacing temp-->
-
-    <!-- Delete Plant Section -->
-    <section class="delete-section">
-      <form onsubmit="return false;" method="delete">
-        <label for="deletePlant">Delete Post By ID</label> <br />
-        <input type="text" name="deletePlant" id="deletePlant" />
-        <input type="submit" value="Delete" onclick="removePlant()" />
-      </form>
-    </section>
-
-    <br><br><br><br> <!-- Spacing temp-->
-
-    <!-- Reseed Section-->
-    <section>
-      <button onclick="reseedDatabase()" style="font-size: 15px">
-        Reseed Database
-      </button>
-    </section>
     
   </body>
 </html>
