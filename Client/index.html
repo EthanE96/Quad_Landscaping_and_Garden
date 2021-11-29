@@ -5,17 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Resources/CSS/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Quad L&G</title>
   </head>
   <body onload="AllPlants()">
     <script type="text/javascript" src="Resources/Scripts/index.js"></script>
+
+    <!-- Nav Section -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html"
+            ><img src="Resources/Images/Quad L&G_Leaf.png"
+          /></a>
+        </li>
+        <li><a class="active text" href="index.html">Home</a></li>
+        <li><a class="text" href="plants.html">Plants</a></li>
+        <li><a class="text" href="garden.html">Starting a Garden</a></li>
+        <li><a class="text" href="contact.html">Contact</a></li>
+
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search Plants" name="search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Landing Image-->
+    <section class="landing">
+      <img
+        class="bg"
+        src="Resources/Images/Landpage_Picture_V2.jpg"
+        alt="landing"
+      />
+      <img class="logo" src="Resources/Images/Quad L&G_LogoW.png" alt="logo" />
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="left">
+        <div class="right">
+          <img src="Resources/Images/Landing_Image.png" alt="landing" />
+        </div>
+        <h1>Designing Great Gardens Since 2021</h1>
+        <h2>
+          Specializing in landscape design, installation, repairs &amp; more...
+        </h2>
+        <p>
+          For over 40 years Mulkern Landscaping has designed and maintained
+          landscapes from urban Honolulu, to East Oahu and Kailua. Specializing
+          in bringing your dream landscape to life, Mulkern Landscaping’s team
+          are the local experts in water feature installation, night lighting,
+          and full-service landscaping projects. Find inspiration in a few of
+          our Honolulu landscaping projects below.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="row">
+        <div class="column">
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              malesuada et tellus fringilla scelerisque. Aenean quam ex, consequ
+              -Brandon
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              malesuada et tellus fringilla scelerisque. Aenean quam ex, consequ
+              -Brandon
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+              malesuada et tellus fringilla scelerisque. Aenean quam ex, consequ
+              -Brandon
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Specializing In -->
+    <section class="specializing">
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+      </div>
+    </section>
 
     <!-- Test Section -->
     <h1>Test</h1>
 
     <!-- All Plants Section -->
     <section id="allPlants"></section>
-
-    
   </body>
 </html>
