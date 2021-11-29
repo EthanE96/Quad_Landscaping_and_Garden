@@ -15,6 +15,8 @@ body {
   padding: 0;
 }
 
+/* Nav */
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -89,6 +91,8 @@ nav input[type="text"] {
   color: var(--green);
 }
 
+/* Landing Image */
+
 .landing {
   position: relative;
   top: 0;
@@ -108,6 +112,7 @@ nav input[type="text"] {
   width: 45vw;
 }
 
+/* Intro Part */
 .intro {
   height: 55vh;
 }
@@ -128,7 +133,7 @@ nav input[type="text"] {
   font-family: var(--font_header);
   color: var(--gray);
   font-weight: 700;
-  font-size: 52px;
+  font-size: 48px;
 }
 
 .left h2 {
@@ -147,6 +152,8 @@ nav input[type="text"] {
   font-size: 25px;
   margin-right: 10%;
 }
+
+/* Testimonials */
 
 .testimonials {
   height: 40vh;
@@ -180,20 +187,224 @@ nav input[type="text"] {
   padding-top: 17px;
 }
 
+/* Specializing In Section Grid */
+
 .specializing {
-  height: 20vw;
+  height: 32vw;
+}
+
+.specializing h1 {
+  font-family: var(--font_header);
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  background-color: var(--gray);
+  padding: 20px;
+  margin-bottom: -10px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: #2196f3;
+  background-color: var(--gray);
   padding: 10px;
 }
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  background-color: var(--gray);
+  font-family: var(--font_header);
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.bottom {
+  border-top: 2.5px solid white;
+  margin-bottom: 80px;
+  padding-top: 30px;
+}
+
+.middle {
+  border-right: 2.5px solid white;
+  border-left: 2.5px solid white;
+}
+.grid-item img {
+  height: 8vw;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Map Section */
+
+.map {
+  height: 45vw;
+}
+
+.map h1 {
+  font-family: var(--font_header);
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.map h2 {
+  font-family: var(--font_header);
+  font-style: italic;
+  font-weight: 500;
   font-size: 30px;
   text-align: center;
+  margin-top: -50px;
+}
+
+.map iframe {
+  width: 100vw;
+  height: 37vw;
+}
+
+/* Footer Section */
+
+.container {
+  display: grid;
+  grid-template-columns: 20% 15% 25% 10% 25%;
+  background-color: var(--gray);
+  height: 70%;
+}
+
+.item {
+  background-color: var(--gray);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* One */
+
+#one img {
+  height: 7vw;
+  display: block;
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+#one {
+  margin-top: 45px;
+  padding-left: 10px;
+  margin-bottom: 45px;
+  border-right: 2.5px solid white;
+  padding-top: 25px;
+}
+
+/* Two */
+
+#two {
+  border-right: 2.5px solid white;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding-right: 30px;
+}
+
+#two ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+  font-family: var(--font_header);
+  font-size: 18px;
+  font-weight: var(--font_header_weight);
+}
+
+#two li {
+  padding-top: 15px;
+}
+
+#two a {
+  text-decoration: none;
+  color: white;
+}
+
+#two li a:hover:not(.active) {
+  color: var(--green);
+}
+
+#two .active {
+  color: var(--green);
+}
+
+/* Three */
+
+#three {
+  text-align: left;
+  margin-top: 45px;
+  margin-left: 30px;
+  margin-bottom: 45px;
+  padding-top: 40px;
+  border-right: 2.5px solid white;
+}
+
+#three h2 {
+  font-family: var(--font_header);
+  font-weight: var(--font_header_weight);
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+#three input[type="text"] {
+  padding: 11px;
+  font-size: 15px;
+  padding-right: 150px;
+  border: none;
+}
+
+#three button {
+  padding: 6.5px 10px;
+  background: var(--gray);
+  color: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font_header);
+  font-weight: var(--font_header_weight);
+  font-size: var(--font_header_size);
+  margin-right: 0;
+}
+
+#three button:hover {
+  color: var(--green);
+}
+
+/* Four */
+
+#four {
+  border-right: 2.5px solid white;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#four img {
+  margin-top: 15px;
+  height: 3.5vw;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Five */
+
+#five {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+#five h2 {
+  font-family: var(--font_header);
+  font-weight: var(--font_header_weight);
+  font-size: 16px;
+  text-align: right;
+  margin-top: 75px;
 }

@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Resources/CSS/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="Resources/CSS/index.css" />
     <title>Quad L&G</title>
   </head>
+
   <body onload="AllPlants()">
     <script type="text/javascript" src="Resources/Scripts/index.js"></script>
 
@@ -21,7 +22,7 @@
       <ul>
         <li>
           <a href="index.html"
-            ><img src="Resources/Images/Quad L&G_Leaf.png"
+            ><img src="Resources/Images/Logo/Quad L&G_Leaf.png"
           /></a>
         </li>
         <li><a class="active text" href="index.html">Home</a></li>
@@ -42,17 +43,21 @@
     <section class="landing">
       <img
         class="bg"
-        src="Resources/Images/Landpage_Picture_V2.jpg"
+        src="Resources/Images/Landing/Landpage_Picture_V2.jpg"
         alt="landing"
       />
-      <img class="logo" src="Resources/Images/Quad L&G_LogoW.png" alt="logo" />
+      <img
+        class="logo"
+        src="Resources/Images/Logo/Quad L&G_LogoW.png"
+        alt="logo"
+      />
     </section>
 
     <!-- Intro Section -->
     <section class="intro">
       <div class="left">
         <div class="right">
-          <img src="Resources/Images/Landing_Image.png" alt="landing" />
+          <img src="Resources/Images/Landing/Landing_Image.png" alt="landing" />
         </div>
         <h1>Designing Great Gardens Since 2021</h1>
         <h2>
@@ -104,20 +109,77 @@
 
     <!--  Specializing In -->
     <section class="specializing">
+      <h1>Specializing In</h1>
       <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
+        <div class="grid-item">
+          <img src="Resources/Images/Landing/Grid/1.png" />Landscaping Planting
+        </div>
+        <div class="grid-item middle">
+          <img src="Resources/Images/Landing/Grid/2.png" />Garden Maintenance
+        </div>
+        <div class="grid-item">
+          <img src="Resources/Images/Landing/Grid/3.png" />Flower Design
+        </div>
+        <div class="grid-item bottom">
+          <img src="Resources/Images/Landing/Grid/4.png" />Light Fixtures
+        </div>
+        <div class="grid-item bottom middle">
+          <img src="Resources/Images/Landing/Grid/5.png" />Irrigation
+        </div>
+        <div class="grid-item bottom">
+          <img src="Resources/Images/Landing/Grid/6.png" />Landscape Renovation
+        </div>
       </div>
     </section>
 
-    <!-- Test Section -->
-    <h1>Test</h1>
+    <!--  Map Section -->
+    <section class="map">
+      <h1>Serving The Greater Tuscaloosa Area</h1>
+      <h2>Est. 2021</h2>
+      <div>
+        <iframe
+          width="600"
+          height="450"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJq0sXmZgChogR4d8JDhISjc4&key=AIzaSyCRDsb_GUeh3sYN5yU0ZvYMrjWwnO3V4A8"
+        ></iframe>
+      </div>
+    </section>
 
-    <!-- All Plants Section -->
-    <section id="allPlants"></section>
+    <!--  Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="item" id="one">
+          <img src="Resources/Images/Logo/Quad L&G_LogoW.png" />
+        </div>
+        <div class="item" id="two">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="plants.html">Plants</a></li>
+            <li><a href="garden.html">Starting a Garden</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="item" id="three">
+          <h2>Newsletter</h2>
+          <form action="#">
+            <input type="text" placeholder="Email" name="search" />
+            <button type="submit">Enter</button>
+          </form>
+        </div>
+        <div class="item" id="four">
+          <a href="#"><img src="Resources/Images/facebook.png" /></a>
+          <a href="#"><img src="Resources/Images/instagram.png" /></a>
+        </div>
+        <div class="item" id="five">
+          <h2>Ⓒ 2021, Quad Landscaping &amp; Garden<br />Powered by Heroku</h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- All Plants Section
+    <section id="allPlants"></section> -->
   </body>
 </html>
