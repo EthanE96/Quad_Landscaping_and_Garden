@@ -1,67 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-  
-<head>
-
-    <title>Title</title>
-
+  <head>
+    <title>Quad L&G</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-    <!--- Main Stylesheet -->
-    <link rel = "stylesheet" href="style.css">
-</head>
+    <!--- CSS -->
+    <link rel="stylesheet" href="Resources/CSS/index.css" />
+  </head>
 
-<body>
-    
+  <body>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Navagation Bar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
-            <a href="#" class="navbar-brand"> <img src="img/leaf.png" alt = "The Quad Landscaping and Garden Leaf Logo"/> </a>
-            <button class="navbar-toggler" type = "button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="Resources/Images/Logo/Leaf.png" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><img
+              src="Resources/Images/Logo/Lines_Menu.png"
+              height="40"
+              style="margin-top: -7px; margin-left: -10px"
+            />
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plants.html">Plants</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="garden.html">Starting a Garden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search for plants..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-
-            <div class="collapse navbar-collapse" id ="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link"> Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#plants" class="nav-link"> Plants </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#maintenance" class="nav-link"> Starting a Garden </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link"> Contact </a>
-                    </li>
-                </ul>
-
-                <form class = "form-inline">
-                    <div class="input-group">
-                    <input class = "form-control mr-sm-2" type= "search" placeholder= "Search" aria-label="Search" style="margin-right: 12px">
-                    <button class = "btn btn-light my-sm-0" type="submit"> Search </button>
-                    </div>
-                </form>   
-            </div>
+          </form>
         </div>
+      </div>
     </nav>
 
     <!--- Image Slider -->
+<<<<<<< HEAD
     <div id="slides" class = "carousel slide" data-bs-ride="carousel">
         <ul class="carousel-indicators">
             <li data-bs-target="#slides" data-slide-to="0" class= "active"></li>
@@ -103,16 +144,84 @@
     <div class="row welcome text-center">
         <div class="col-12 mt-2">
             <h1 class="display-5">Designing Gardens in the Tuscaloosa Area Since 1981</h1>
+=======
+    <div id="slides" class="carousel slide" data-bs-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-bs-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-bs-target="#slides" data-slide-to="1"></li>
+        <li data-bs-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="Resources/Images/Index/garden.png"
+            alt="Garden Background"
+          />
+          <div class="carousel-caption">
+            <img
+              src="Resources/Images/Logo/Quad L&G_LogoW.png"
+              alt="The Quad Landscaping and Gardening Logo"
+              class="logo"
+            />
+          </div>
         </div>
-        <hr>
+        <div class="carousel-item">
+          <img
+            src="Resources/Images/Index/garden1.jfif"
+            alt="Garden Background"
+          />
+          <div class="carousel-caption">
+            <img
+              src="Resources/Images/Logo/Quad L&G_LogoW.png"
+              alt="The Quad Landscaping and Gardening Logo"
+              class="logo"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Resources/Images/Index/garden2.jfif"
+            alt="Garden Background"
+          />
+          <div class="carousel-caption">
+            <img
+              src="Resources/Images/Logo/Quad L&G_LogoW.png"
+              alt="The Quad Landscaping and Gardening Logo"
+              class="logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Jumbotron -->
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="lead">Lorem ipsum</p>
+        </div>
+      </div>
+    </div>
+
+    <!--- Text -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
         <div class="col-12">
-            <p class="lead"> Lorem ipsum </p>
+          <h1 class="display-5">
+            Designing Gardens in the Tuscaloosa Area Since 1981
+          </h1>
+>>>>>>> 0ca30a7367231f378cce3027229e1d61f9931d87
         </div>
-    </div>    
+        <hr />
+        <div class="col-12">
+          <p class="lead">Lorem ipsum</p>
+        </div>
+      </div>
     </div>
 
     <!--- Boxes -->
     <section class="p-5">
+<<<<<<< HEAD
         <div class="container">
             <div class="row text-center">
                 <div class="col-md mb-3">
@@ -162,9 +271,57 @@
                             <a href="#Home" class="btn btn-primary"> Read More</a>
                         </div>
                     </div>
+=======
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-flower1"></i>
                 </div>
+                <h3 class="card-title mb-3">Plant List</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem nisi facere dolorum dolores exercitationem nemo?
+                </p>
+                <a href="#Home" class="btn btn-primary"> Read More</a>
+              </div>
             </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-flower1"></i>
+                </div>
+                <h3 class="card-title mb-3">Plant List</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem nisi facere dolorum dolores exercitationem nemo?
+                </p>
+                <a href="#Home" class="btn btn-primary"> Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-flower1"></i>
+>>>>>>> 0ca30a7367231f378cce3027229e1d61f9931d87
+                </div>
+                <h3 class="card-title mb-3">Plant List</h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem nisi facere dolorum dolores exercitationem nemo?
+                </p>
+                <a href="#Home" class="btn btn-primary"> Read More</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--- Boxes v2 -->
@@ -207,12 +364,27 @@
     </div>
 
     <!--- Google Map -->
+<<<<<<< HEAD
         <section class="p-5 mb-3">
             <iframe width="100%" height="550" id="gmap_canvas" 
             src="https://maps.google.com/maps?q=denny%20chimes&t=&z=13&ie=UTF8&iwloc=&output=embed" 
             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </section>
     
+=======
+    <section class="map">
+      <iframe
+        width="100%"
+        height="550"
+        id="gmap_canvas"
+        src="https://maps.google.com/maps?q=denny%20chimes&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+      ></iframe>
+    </section>
+>>>>>>> 0ca30a7367231f378cce3027229e1d61f9931d87
 
     <!-- Footer -->
     <!--<footer>
@@ -253,54 +425,69 @@
 
     <!-- Footer v1-->
     <footer>
-        <div class = "py-6 bg-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg 0">
-                        <div class="fw-bold text-uppercase text-heading mb-3"> Directory </div>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a href="#" class="text-para" Title=facebook>  <i class="bi bi-facebook"></i>  </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="text-para" Title=instagram>  <i class="bi bi-instagram"></i>  </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                        <h6 class="fw-bold text-uppercase text-heading mb-3">Test</h6>
-                        <ul class="list-unstyled"> 
-                            <li> <a href="#" class="text-para"> Rooms </a> </li>
-                            <li> <a href="#" class="text-para"> Rooms </a> </li>
-                            <li> <a href="#" class="text-para"> Rooms </a> </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-                        <h6 class="fw-bold text-uppercase text-heading mb-3">Test</h6>
-                        <ul class="list-unstyled"> 
-                            <li> <a href="#" class="text-para"> Rooms </a> </li>
-                            <li> <a href="#" class="text-para"> Rooms </a> </li>
-                            <li> <a href="#" class="text-para"> Rooms </a> </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <h6 class="text-uppercase text-heading mb-3">Newsletter</h6>
-                        <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, sit?</p>
-                        <form action = "#" id="newsletter-form"> 
-                            <div class="input-group mb-3">  
-                                <input type="email" class="form-control bg-transparent border-dark border-end-0" placeholder="E-Mail Address" aria-label = "Your E-Mail Address">
-                                <button class="btn btn-outline-dark border-start-0" type="submit"> <i class="bi bi-plus text-lg"></i> </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+      <div class="py-6 bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg 0">
+              <div class="fw-bold text-uppercase text-heading mb-3">
+                Directory
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-para" title="facebook">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-para" title="instagram">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="fw-bold text-uppercase text-heading mb-3">Test</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-para"> Rooms </a></li>
+                <li><a href="#" class="text-para"> Rooms </a></li>
+                <li><a href="#" class="text-para"> Rooms </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+              <h6 class="fw-bold text-uppercase text-heading mb-3">Test</h6>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-para"> Rooms </a></li>
+                <li><a href="#" class="text-para"> Rooms </a></li>
+                <li><a href="#" class="text-para"> Rooms </a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <h6 class="text-uppercase text-heading mb-3">Newsletter</h6>
+              <p class="mb-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit, sit?
+              </p>
+              <form action="#" id="newsletter-form">
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control bg-transparent border-dark border-end-0"
+                    placeholder="E-Mail Address"
+                    aria-label="Your E-Mail Address"
+                  />
+                  <button
+                    class="btn btn-outline-dark border-start-0"
+                    type="submit"
+                  >
+                    <i class="bi bi-plus text-lg"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
