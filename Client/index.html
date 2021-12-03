@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Google Signin -->
+    <meta name="google-signin-client_id" content="835186845388-hdok47ojmo9up258e3tvg9s56kmie57i.apps.googleusercontent.com">
+
     <!--- CSS -->
     <link rel="stylesheet" href="Resources/CSS/index.css" />
   </head>
@@ -44,6 +47,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    
 
     <!-- Navagation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg">
@@ -78,8 +82,6 @@
       </div>
     </nav>
 
-
-
     <!--- Image Slider V2 -->
     <div
       id="carouselExampleInterval"
@@ -87,25 +89,25 @@
       data-bs-ride="carousel"
     >
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="1000">
+        <div class="carousel-item active" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden1.jpg" class="img-fluid d-block w-100"/>
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden2.jpg" class="img-fluid d-block w-100"/>
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden3.jpg" class="img-fluid d-block w-100"/>
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden4.jpg" class="img-fluid d-block w-100"/>
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden5.jpg" class="img-fluid d-block w-100"/>
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden6.jpg" class="img-fluid d-block w-100"/>
         </div>
-        <div class="carousel-item" data-bs-interval="1000">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="./Resources/Images/Index/garden7.jpg" class="img-fluid d-block w-100"/>
         </div>
       </div>
@@ -193,6 +195,32 @@
       </div>
     </section>
 
+    <!--  Specializing In -->
+    <section class="specializing">
+      <h1>Specializing In</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="./Resources/Images/Index/Specializing In/1.png" />Landscaping Planting
+        </div>
+        <div class="grid-item middle">
+          <img src="./Resources/Images/Index/Specializing In/2.png" />Garden Maintenance
+        </div>
+        <div class="grid-item">
+          <img src="./Resources/Images/Index/Specializing In/3.png" />Flower Design
+        </div>
+        <div class="grid-item bottom">
+          <img src="./Resources/Images/Index/Specializing In/4.png" />Light Fixtures
+        </div>
+        <div class="grid-item bottom middle">
+          <img src="./Resources/Images/Index/Specializing In/5.png" />Irrigation
+        </div>
+        <div class="grid-item bottom">
+          <img src="./Resources/Images/Index/Specializing In/6.png" />Landscape Renovation
+        </div>
+      </div>
+    </section>
+
+
     <!--- Google Map -->
     <section class="map">
       <iframe
@@ -207,57 +235,36 @@
       ></iframe>
     </section>
 
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
     <!-- Footer -->
-    <!--<footer>
-        <div class="container-fluid padding">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img src="img/quad-logo-small.png" alt="Quad Landscaping and Garden Logo" class = "footer-logo">
-                    <hr class="light">
-                    <p> 555-555-5555 </p>
-                    <p> btbski2012@gmail.com </p>
-                    <p> 100 Street Name </p>
-                    <p> Tuscaloosa, AL 35401 </p>
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5> Our Hours </h5>
-                    <hr class="light">
-                    <p> Monday: 9AM - 5PM </p>
-                    <p> Tuesday: 9AM - 5PM </p>
-                    <p> Wednesday: 9AM - 5PM </p>
-                    <p> Thursday: 9AM - 5PM </p>
-                    <p> Friday: 9AM - 5PM </p>
-                    <p> Closed on Weekends </p>
-                </div>
-                <div class="col-md-4">
-                    <hr class="light">
-                    <h5> Service Area </h5>
-                    <hr class="light">
-                    <p> Tuscaloosa </p>
-                    <p> Northport </p>
-                </div>
-                <div class="col-12"></div>
-                <hr class="light">
-                <h5> &copy; The Quad Landscaping and Garden </h5>
-            </div>
-        </div>
-    </footer>-->
-
-
-    <!-- Footer v1-->
     <footer>
       <div class="py-6 bg-gray">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-5 mb-lg 0">
               <div class="fw-bold text-uppercase text-heading mb-3">
-                Directory
+                  
+              <div id="my-signin2"></div>
+              <script>
+                function onSuccess(googleUser) {
+                  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+                }
+                function onFailure(error) {
+                  console.log(error);
+                }
+                function renderButton() {
+                  gapi.signin2.render('my-signin2', {
+                    'scope': 'profile email',
+                    'width': 240,
+                    'height': 50,
+                    'longtitle': true,
+                    'theme': 'dark',
+                    'onsuccess': onSuccess,
+                    'onfailure': onFailure
+                  });
+                }
+              </script>
+              <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+              Directory
               </div>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <ul class="list-inline">
