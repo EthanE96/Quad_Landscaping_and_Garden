@@ -1,88 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-
-html, body{
-    height: 100%;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    color: #222;
-}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
 
 :root {
-    --gray: #373737;
-    --green: #35c12b;
+  --gray: #373737;
+  --green: #35c12b;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* Navbar */
 .navbar {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
-  
+
 .navbar-nav li {
-    padding-right: 20px;
-    margin-left: 30px;
+  padding-right: 20px;
+  margin-left: 30px;
 }
-  
+
 .navbar-nav li :hover {
-    color: var(--green);
+  color: var(--green)
 }
-  
+
 .nav-link {
-    font-size: 1.1em;
-    color: white;
+  font-size: 1.1em;
+  color: white;
 }
-  
-nav button {
-    color: rgba(0, 0, 0, 0);
-}
-  
+
 .active {
-    color: var(--green);
+  color: var(--green);
 }
 
-
-.banner{
-    color: #222;
-    text-align: center;
-    padding-top: 100px;
+.btn-outline-success {
+  background-color: var(--green);
 }
-  
-.banner-heading{
-    font-size: 100px;
-    font-weight: bold;
-}
+/* ----- */
 
-.subheading{
-    font-size: 25px;
+.banner {
+  color: #222;
+  text-align: center;
+  padding-top: 100px;
 }
 
-.plant-image{
-    max-width: 25px;
-    max-height: 25px;
+.banner-heading {
+  font-size: 100px;
+  font-weight: bold;
+}
 
+.subheading {
+  font-size: 25px;
+}
+
+.plant-image {
+  max-width: 25px;
+  max-height: 25px;
 }
 
 footer {
-    background-color: #3f3f3f;
-    color: #d5d5d5;
-    padding-top: 2rem;
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
 }
-  
+
 .list-unstyled li a {
-    text-decoration: none;
-    color: #d5d5d5;
+  text-decoration: none;
+  color: #d5d5d5;
 }
 
 .list-unstyled li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-  
+
 .bg-transparent {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
-  
+
 .border-dark {
-    background-color: #d5d5d5 !important;
+  background-color: #d5d5d5 !important;
 }
 
 .border-end-0 {
-    border-right: 0;
+  border-right: 0;
 }

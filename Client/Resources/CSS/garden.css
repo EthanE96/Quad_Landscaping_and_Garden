@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+:root {
+  --gray: #373737;
+  --green: #35c12b;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--gray);
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+  margin-left: 30px;
+}
+
+.navbar-nav li :hover {
+  color: var(--green);
+}
+
+.nav-link {
+  font-size: 1.1em;
+  color: white;
+}
+
+.active {
+  color: var(--green);
+}
+
+.btn-outline-success {
+  background-color: var(--green);
+}
+/* ----- */

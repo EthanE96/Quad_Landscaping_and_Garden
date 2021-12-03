@@ -1,3 +1,17 @@
 {
-    "sqltools.connections": []
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "yjo6uubt3u5c16az.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "username": "ikq3ovpbfvzmta53",
+            "password": "px6dfc5j02dvnzwj",
+            "database": "n0f49rs3obnijmmo",
+            "name": "Quad L&G"
+        }
+    ]
 }
