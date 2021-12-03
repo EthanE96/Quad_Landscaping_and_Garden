@@ -42,8 +42,17 @@ namespace API.Database
                 season="All Seasons" 
             };
 
+            Plant tempPlant2 = new Plant(){
+                plantName="Fern",
+                plantDescrip="Ferns are fun and cool, yay for ferns",
+                plantWater=100,
+                plantSunlight=5,
+                season="All Seasons" 
+            };
+
             ISavePlant saveTemp = new SavePlant(){};
             saveTemp.CreatePlant(tempPlant);
+            saveTemp.CreatePlant(tempPlant2);
         }
 
         public void CreatePlant(Plant allPlants)
