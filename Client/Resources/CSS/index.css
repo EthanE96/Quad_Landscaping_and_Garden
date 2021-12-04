@@ -42,12 +42,13 @@ body {
 /* ----- */
 
 /* Image Slider */
+
+
 .image-slide{
   position: absolute;
   top: 25%;
   margin-left: 22vw;
 }
-
 @media screen and (max-width: 700px){   
     .image-slide{      
         top: 13%
@@ -55,56 +56,53 @@ body {
 }
 /* ----- */
 
-/* Specializing In */
-.specializing {
-  height: 32vw;
+/* Header Text */
+.header {
+  margin-top: 15px;
+  font-weight: 400;
 }
 
-.specializing h1 {
-  font-family: var(--font_header);
-  color: white;
-  font-weight: 700;
-  font-size: 48px;
+.subheader {
+  padding-right: 20%;
+  padding-left:20%;
   text-align: center;
-  background-color: var(--gray);
-  padding: 20px;
-  margin-bottom: -10px;
+  margin-bottom: -15%;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: var(--gray);
-  padding: 10px;
-}
-.grid-item {
-  background-color: var(--gray);
-  font-family: var(--font_header);
-  font-weight: 500;
-  font-size: 28px;
-  text-align: center;
-  color: white;
-  padding-bottom: 30px;
+@media screen and (max-width: 700px){   
+  .header {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 135%;
+}  
+  .subheader{      
+    font-size: 90%;
+    margin-bottom: -15%;
+  } 
 }
 
-.bottom {
-  border-top: 2.5px solid white;
-  margin-bottom: 80px;
-  padding-top: 30px;
-}
-
-.middle {
-  border-right: 2.5px solid white;
-  border-left: 2.5px solid white;
-}
-.grid-item img {
-  height: 8vw;
-  padding-bottom: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 /* ----- */
+
+/* Boxes */
+#box {
+  background-color: var(--gray) !important;
+}
+
+.col-md {
+  padding-top: 10%;
+}
+
+.card-text {
+  font-size: 110%; 
+}
+
+.person {
+  font-size: 110%; 
+  color: var(--green);
+}
+
+/* ----- */
+
 
 
 footer {

@@ -27,7 +27,7 @@ function getPlants(){ //GET METHOD
       document.getElementById("Mdescrip"+count).innerHTML = htmlMDescrip;
 
       count++;
-    });
+    }); 
   })
   .catch(function (error) {
     console.log(error);

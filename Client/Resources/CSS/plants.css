@@ -41,6 +41,18 @@ body {
 }
 /* ----- */
 
+/* Boxes */
+.box-color {
+  background-color: var(--gray) !important;
+}
+
+.btn-primary {
+background-color: var(--green) !important;
+border-color: var(--gray) !important;
+}
+
+/* ----- */
+
 .banner {
   color: #222;
   text-align: center;
