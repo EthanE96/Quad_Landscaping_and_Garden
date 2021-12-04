@@ -16,11 +16,13 @@
       crossorigin="anonymous"
     />
 
-    <!-- Google Signin -->
-    <meta name="google-signin-client_id" content="835186845388-hdok47ojmo9up258e3tvg9s56kmie57i.apps.googleusercontent.com">
-
     <!--- CSS -->
-    <link rel="stylesheet" href="Resources/CSS/index.css" />
+    <link rel="stylesheet" href="./Resources/CSS/index.css" />
+
+    <!-- Google Sign In -->
+    <meta name="google-signin-client_id" content="835186845388-hdok47ojmo9up258e3tvg9s56kmie57i.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   </head>
 
   <body>
@@ -35,11 +37,6 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
     <script
@@ -242,29 +239,31 @@
           <div class="row">
             <div class="col-lg-4 mb-5 mb-lg 0">
               <div class="fw-bold text-uppercase text-heading mb-3">
-                  
-              <div id="my-signin2"></div>
+                
+              <!-- Google Sign In -->
+              <div class="g-signin2" data-onsuccess="onSignIn"></div>
               <script>
-                function onSuccess(googleUser) {
-                  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-                }
-                function onFailure(error) {
-                  console.log(error);
-                }
-                function renderButton() {
-                  gapi.signin2.render('my-signin2', {
-                    'scope': 'profile email',
-                    'width': 240,
-                    'height': 50,
-                    'longtitle': true,
-                    'theme': 'dark',
-                    'onsuccess': onSuccess,
-                    'onfailure': onFailure
-                  });
-                }
+                  function onSignIn(googleUser) {
+                  var profile = googleUser.getBasicProfile();
+                  
+                  var confirm = "ethanaedwards5@gmail.com"
+                  var userEmail = profile.getEmail()
+                  
+                  if (userEmail == confirm) {
+                      window.location="admin.html";
+
+                      var auth2 = gapi.auth2.getAuthInstance();
+                      auth2.signOut().then(function (){
+                        console.log('User signed out.');
+                      });
+                  }
+                  else{
+                      alert("Passwords do not match.");
+                  }
+              }
               </script>
-              <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-              Directory
+
+
               </div>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
               <ul class="list-inline">

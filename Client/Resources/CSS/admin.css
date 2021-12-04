@@ -41,6 +41,10 @@ body {
 }
 /* ----- */
 
+.g-signin2{
+	margin-top: 5%;
+}
+
 .container-xl {
 	margin-top: 120px;
 }
