@@ -33,7 +33,7 @@ body {
 }
 
 .active {
-  color: var(--green);
+  color: var(--green) !important;
 }
 
 .btn-outline-success {
@@ -66,28 +66,30 @@ nav input[type=text] {
 /* Header Text */
 .header {
   margin-top: 15px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .subheader {
-  padding-right: 20%;
-  padding-left:20%;
+  padding-right: 25%;
+  padding-left:25%;
   text-align: center;
   margin-bottom: -15%;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 700px){   
   .header {
   margin-top: 15px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 135%;
 }  
   .subheader{      
-    font-size: 90%;
+    font-size: 110%;
     margin-bottom: -15%;
+    padding-right: 10%;
+    padding-left: 10%;
   } 
 }
-
 /* ----- */
 
 /* Boxes */
@@ -107,24 +109,51 @@ nav input[type=text] {
   font-size: 110%; 
   color: var(--green);
 }
-
 /* ----- */
 
 
-
+/* Footer */
 footer {
-  background-color: #3f3f3f;
+  background-color: var(--gray);
   color: #d5d5d5;
   padding-top: 2rem;
 }
 
+.footer-img{
+  width: 70%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 700px){  
+  .footer-img{
+    width: 50%;
+  }
+}
+
+.list-unstyled li{
+  padding-top: 8%;
+}
+
 .list-unstyled li a {
   text-decoration: none;
-  color: #d5d5d5;
+  color: white;
 }
 .list-unstyled li a:hover {
-  text-decoration: underline;
+  color: var(--green);
 }
+
+.list-inline-item img {
+  width: 25%;
+}
+
+.col-lg-4 h6{
+  color: white;
+}
+
+.col-lg-4 p {
+  color: white;
+}
+
 
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -136,3 +165,4 @@ footer {
 .border-end-0 {
   border-right: 0;
 }
+/* ----- */
