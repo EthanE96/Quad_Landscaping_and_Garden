@@ -39,11 +39,18 @@ body {
 .btn-outline-success {
   background-color: var(--green);
 }
+
+nav input[type=text] {
+  padding: 6px;
+  margin-top: 0;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
 /* ----- */
 
+
 /* Image Slider */
-
-
 .image-slide{
   position: absolute;
   top: 25%;
