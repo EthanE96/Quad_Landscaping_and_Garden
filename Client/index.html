@@ -25,7 +25,7 @@
 
   </head>
 
-  <body>
+  <body onload="searchButton()">
     <!-- JavaScript -->
     <script type="text/javascript" src="./Resources/Scripts/index.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -44,7 +44,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    
 
     <!-- Navagation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg">
@@ -71,13 +70,30 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search for plants..." aria-label="Search"/>
-            <button class="btn btn-outline-success" style="color: white" type="submit">Search</button>
-          </form>
+	
+            <input name="champion" type="text" id="txtAutoComplete" list="brow"
+            onkeydown = "if (event.keyCode == 13)getPlants(this.value)"
+            placeholder="Search for plants..." />
+
+            <datalist id="brow">
+            </datalist>
+
         </div>
       </div>
     </nav>
+
+     <!-- Modal1 -->
+    <div class="modal fade" id="genModal" tabindex="-1" aria-labelledby="Mname1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Mname">Error</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="Mdescrip">Error</div>
+        </div>
+      </div>
+    </div>
 
     <!--- Image Slider V2 -->
     <div
@@ -214,27 +230,6 @@
                 
               <!-- Google Sign In -->
               <div class="g-signin2" data-onsuccess="onSignIn"></div>
-              <script>
-                  function onSignIn(googleUser) {
-                  var profile = googleUser.getBasicProfile();
-                  
-                  var confirm = "ethanaedwards5@gmail.com"
-                  var userEmail = profile.getEmail()
-                  
-                  if (userEmail == confirm) {
-                      window.location="admin.html";
-
-                      var auth2 = gapi.auth2.getAuthInstance();
-                      auth2.signOut().then(function (){
-                        console.log('User signed out.');
-                      });
-                  }
-                  else{
-                      alert("Passwords do not match.");
-                  }
-              }
-              </script>
-
 
               </div>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -252,7 +247,7 @@
               </ul>
             </div>
             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-              <h6 class="fw-bold text-uppercase text-heading mb-3">Test</h6>
+              <h6 class="fw-bold text-uppefrcase text-heading mb-3">Test</h6>
               <ul class="list-unstyled">
                 <li><a href="#" class="text-para"> Rooms </a></li>
                 <li><a href="#" class="text-para"> Rooms </a></li>

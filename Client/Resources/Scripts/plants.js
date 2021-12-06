@@ -34,3 +34,7 @@ function getPlants(){ //GET METHOD
   });
 }
 
+
+
+
+
