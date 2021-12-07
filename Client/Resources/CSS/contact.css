@@ -80,9 +80,16 @@ body {
 .newsletter {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   background-color: rgb(77, 74, 74);
   color: white;
+}
+
+#mc_embed_signup{
+  text-align: center;
+  background-color: rgb(77, 74, 74);
+  color: white;
+  padding-bottom: 25px;
 }
 
 .map {
