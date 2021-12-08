@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 75px;
 }
 
 .display-4
@@ -63,9 +64,12 @@ body {
   color: white;
 }
 
-.hero p{
-  color: white;
+.header 
+{
+  font-weight: 600;
 }
+
+
 
 .title 
 {
@@ -85,6 +89,26 @@ body {
 
 #my-signin2{
   margin-top: 8vh;
+}
+
+/* Garden FAQs */
+.box
+{
+  background-color: #373737 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box h4{
+  color: #35c12b !important;
+}
+
+/* ----- */
+
+h5
+{
+  font-weight: 600;
 }
 
 
