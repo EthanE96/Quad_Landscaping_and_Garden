@@ -10,5 +10,6 @@ namespace API.Models
         public int plantWater{get; set;}
         public int plantSunlight{get; set;}
         public string season{get; set;}
+        public string imageUrl{get; set;}
     }
 }

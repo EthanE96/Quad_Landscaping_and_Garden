@@ -1,3 +1,4 @@
+using System.Net.Mime;
 using System.Collections.Generic;
 using API.Interfaces;
 using API.Models;
@@ -20,7 +21,8 @@ namespace API.Database
                 plantDescrip TEXT,
                 plantWater INTEGER,
                 plantSunlight INTEGER,
-                season TEXT)";
+                season TEXT,
+                imageUrl TEXT)";
             using var cmd = new MySqlCommand(stm, con);
             cmd.Prepare();
             cmd.ExecuteNonQuery();
@@ -39,7 +41,8 @@ namespace API.Database
                 plantDescrip="Rose's are very pretty and hurt",
                 plantWater=100,
                 plantSunlight=5,
-                season="All Seasons" 
+                season="All Seasons",
+                imageUrl="https://i.imgur.com/KMxMICO.jpg"
             };
 
             Plant tempPlant2 = new Plant(){
@@ -47,7 +50,8 @@ namespace API.Database
                 plantDescrip="Ferns are fun and cool, yay for ferns",
                 plantWater=100,
                 plantSunlight=5,
-                season="All Seasons" 
+                season="All Seasons",
+                imageUrl="https://i.imgur.com/jtsdkVH.jpg"
             };
 
             ISavePlant saveTemp = new SavePlant(){};
@@ -62,7 +66,7 @@ namespace API.Database
             using var con = new MySqlConnection(cs);
             con.Open();
 
-            string stm = @"INSERT INTO plants(id, plantName, plantDescrip, plantWater, plantSunlight, season) VALUES (@id, @plantName, @plantDescrip, @plantWater, @plantSunlight, @season)";
+            string stm = @"INSERT INTO plants(id, plantName, plantDescrip, plantWater, plantSunlight, season, imageUrl) VALUES (@id, @plantName, @plantDescrip, @plantWater, @plantSunlight, @season, @imageUrl)";
             using var cmd = new MySqlCommand(stm, con);
 
             cmd.Parameters.AddWithValue("@id", allPlants.id);
@@ -71,18 +75,19 @@ namespace API.Database
             cmd.Parameters.AddWithValue("@plantWater", allPlants.plantWater);
             cmd.Parameters.AddWithValue("@plantSunlight", allPlants.plantSunlight);
             cmd.Parameters.AddWithValue("@season", allPlants.season);
+            cmd.Parameters.AddWithValue("@imageUrl", allPlants.imageUrl);
             cmd.Prepare();
             cmd.ExecuteNonQuery();
         }
 
-        public void EditPlant(int id, string plantName, string plantDescrip, int plantWater, int plantSunlight, string season)
+        public void EditPlant(int id, string plantName, string plantDescrip, int plantWater, int plantSunlight, string season, string imageUrl)
         {
             ConnectionString myConnection = new ConnectionString();
             string cs = myConnection.cs;
             using var con = new MySqlConnection(cs);
             con.Open();
             
-            string stm = @"UPDATE plants SET plantName=@plantName, plantDescrip=@plantDescrip, plantWater=@plantWater, plantSunlight=@plantSunlight, season=@season WHERE id=@id";
+            string stm = @"UPDATE plants SET plantName=@plantName, plantDescrip=@plantDescrip, plantWater=@plantWater, plantSunlight=@plantSunlight, season=@season, imageUrl=@imageUrl WHERE id=@id";
             using var cmd = new MySqlCommand(stm, con);
             cmd.Parameters.AddWithValue("@id", id);
             cmd.Parameters.AddWithValue("@plantName", plantName);
@@ -90,6 +95,7 @@ namespace API.Database
             cmd.Parameters.AddWithValue("@plantWater", plantWater);
             cmd.Parameters.AddWithValue("@plantSunlight", plantSunlight);
             cmd.Parameters.AddWithValue("@season", season);
+            cmd.Parameters.AddWithValue("@imageUrl", imageUrl);
             cmd.Prepare();
             cmd.ExecuteNonQuery();
         }

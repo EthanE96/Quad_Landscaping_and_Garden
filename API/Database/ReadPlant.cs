@@ -27,7 +27,9 @@ namespace API.Database
                     plantDescrip=reader.GetString(2),
                     plantWater=reader.GetInt32(3),
                     plantSunlight=reader.GetInt32(4),
-                    season=reader.GetString(5),});
+                    season=reader.GetString(5),
+                    imageUrl=reader.GetString(6)
+                    });
             } 
             return readPost; 
         }
@@ -51,7 +53,8 @@ namespace API.Database
                     plantDescrip=reader.GetString(2),
                     plantWater=reader.GetInt32(3),
                     plantSunlight=reader.GetInt32(4),
-                    season=reader.GetString(5),};
+                    season=reader.GetString(5),
+                    imageUrl=reader.GetString(6)};
         }
     }
 }

@@ -21,33 +21,6 @@ function searchButton(){
   });
 }
 
-function getPlants(value){ //GET METHOD
-  const plantsAPI = "https://quadlg-api.herokuapp.com/api/plants";
-
-  fetch(plantsAPI)
-  .then(function (respone) {
-    console.log(respone);
-    return respone.json();
-  })
-  .then(function (json) {
-    let MTitle = "";
-    let MDescrip = "";
-
-        json.forEach((plant) => {
-            if (plant.plantName = value){
-                MTitle = plant.plantName;
-                MDescrip = plant.plantDescrip;
-            }
-        document.getElementById("Mname").innerHTML = MTitle;
-        document.getElementById("Mdescrip").innerHTML = MDescrip;
-        });
-        $('#genModal').modal('show'); 
-    })
-  .catch(function (error) {
-    console.log(error);
-  });
-}
-
 
 
 

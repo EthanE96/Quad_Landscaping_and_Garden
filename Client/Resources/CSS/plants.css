@@ -50,9 +50,9 @@ body {
 background-color: var(--green) !important;
 border-color: var(--gray) !important;
 }
-
 /* ----- */
 
+/* Text */
 .banner {
   color: #222;
   text-align: center;
@@ -67,11 +67,17 @@ border-color: var(--gray) !important;
 .subheading {
   font-size: 25px;
 }
+/* ----- */
 
-.plant-image {
-  max-width: 25px;
-  max-height: 25px;
+
+/* AG Grid */
+#myGrid{
+  margin: auto;
 }
+
+
+/* ----- */
+
 
 footer {
   background-color: #3f3f3f;
