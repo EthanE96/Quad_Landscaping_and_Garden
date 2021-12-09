@@ -56,11 +56,22 @@ body {
   padding: 50px 0;
 }
 
+
+/* contact */
 .contact-heading {
   font-size: 650%;
   font-weight: bold;
 }
 
+.contact-form{
+  display: block;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+
+/* social media */
 .social-media {
   text-align: center;
   padding-top: 50px;
@@ -73,24 +84,36 @@ body {
   font-weight: bold;
 }
 
+.instagram-post{
+  text-align: center;
+}
+
+
+
+
+/* newsletter */
+
 .newsletter {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
   background-color: rgb(77, 74, 74);
   color: white;
 }
+
 
 #mc_embed_signup{
-  text-align: center;
-  background-color: rgb(77, 74, 74);
+  background: rgb(77, 74, 74); 
   color: white;
-  padding-bottom: 25px;
+  text-align: center;
+  width:100%;
 }
 
+/*  */
 .map {
   text-align: center;
   padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 /* Footer */
@@ -209,3 +232,4 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 /* ----- */
+
