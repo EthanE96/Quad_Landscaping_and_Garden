@@ -37,10 +37,9 @@ body {
 }
 /* ----- */
 
-/* Main Plant Choice */
-
+/* Featured Plants */
 .hero { 
-  background-image: url("https://cdn.wallpapersafari.com/95/37/GHT30b.jpg");
+  background-image: url("https://www.lawnstarter.com/blog/wp-content/uploads/2019/01/artificial-turf.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,42 +47,39 @@ body {
   margin-top: 75px;
 }
 
-.display-4
-{
+.display-4 {
   color: white;
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 450%;;
 }
 
-.header 
-{
+.card-body{
+  background-color: var(--gray) !important;
+}
+
+#name {
+  font-size: 190% !important;
   font-weight: 600;
 }
 
-
-
-.title 
-{
-  font-size: 75px;
-  color: white;
-  text-align: center;
+#descrip {
+  font-size: 90% !important;
+  background-color: var(--gray) !important;
 }
 /* ----- */
 
-.test{
-  margin-top: 8vh;
-}
-
-.test h1 {
-  font-size: 100px;
-}
-
-#my-signin2{
-  margin-top: 8vh;
-}
-
 /* Garden FAQs */
+.display-5 {
+  font-weight: 500;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .box
 {
-  background-color: #373737 !important;
+  background-color: var(--gray) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,13 +88,27 @@ body {
 .box h4{
   color: #35c12b !important;
 }
-
 /* ----- */
 
-h5
-{
-  font-weight: 600;
+/* Tips and Tricks */
+.list-group {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
+
+
+.list-group h5{
+  color: #35c12b;
+  font-weight: 500;
+  font-size: 140%;
+}
+
+.list-group p{
+  columns: var(--gray);
+  font-size: 110%
+}
+/* ----- */
+
 
 /* Footer */
 footer {
