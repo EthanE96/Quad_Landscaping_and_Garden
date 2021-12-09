@@ -42,6 +42,7 @@ body {
   height: 100%;
 }
 
+
 .carousel-caption {
   position: absolute;
   top: 50%;
@@ -57,7 +58,7 @@ body {
 }
 
 
-/* contact */
+/* contact form */
 .contact-heading {
   font-size: 650%;
   font-weight: bold;
@@ -90,7 +91,6 @@ body {
 
 
 
-
 /* newsletter */
 
 .newsletter {
@@ -107,14 +107,18 @@ body {
   color: white;
   text-align: center;
   width:100%;
+  padding-bottom: 20px;
 }
 
-/*  */
+
+/* Map */
 .map {
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   padding-top: 25px;
 }
+
+
 
 /* Footer */
 footer {
