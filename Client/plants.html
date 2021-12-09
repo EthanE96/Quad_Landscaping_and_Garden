@@ -47,6 +47,10 @@
     crossorigin="anonymous"
     ></script>
 
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+
     <!-- Navagation Bar -->
     <nav class="navbar fixed-top navbar-expand-lg">
       <div class="container-fluid">
@@ -76,10 +80,6 @@
             <input class="form-control me-2" type="search" placeholder="Search for plants..." aria-label="Search"/>
             <button class="btn btn-outline-success" style="color: white" type="submit">Search</button>
           </form>
-
-          <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
-          <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
-          <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
         </div>
       </div>
     </nav>
@@ -90,6 +90,7 @@
       <p class="subheading">Come View Our Library of Plants</p>
     </div>
 
+    <!-- Table -->
     <div id="myGrid" style="height: 80vh; width:80vw;" class="ag-theme-alpine"></div>      
     
     

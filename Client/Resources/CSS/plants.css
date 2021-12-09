@@ -41,20 +41,9 @@ body {
 }
 /* ----- */
 
-/* Boxes */
-.box-color {
-  background-color: var(--gray) !important;
-}
-
-.btn-primary {
-background-color: var(--green) !important;
-border-color: var(--gray) !important;
-}
-/* ----- */
-
 /* Text */
 .banner {
-  color: #222;
+  color: var(--green);
   text-align: center;
   padding-top: 100px;
 }
@@ -75,7 +64,26 @@ border-color: var(--gray) !important;
   margin: auto;
 }
 
+.ag-pivot-off .ag-header-cell-label {
+  color: var(--gray);
+  font-family: "Poppins", sans-serif;
+  font-size: 120%;
+}
 
+.evens{
+  background-color: var(--gray) !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 125% !important;
+  border-color: white;
+}
+
+.odds{
+  background-color: #474747 !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 125% !important;
+}
 /* ----- */
 
 

@@ -1,6 +1,6 @@
 var columnDefs = [
-  {headerName: "Image", field: "imageUrl", cellRenderer: ({ value }) => `<img style="height: 250px; width: 250px" src=${value}/>`,
-    minWidth: 300, maxWidth: 350},
+  {headerName: "Image", field: "imageUrl", cellRenderer: ({ value }) => `<img style="height: 250px; width: 250px; margin-left: -25px; text-align: center;" src=${value}/>`,
+    minWidth: 250, maxWidth: 350, cellStyle: {textAlign: 'center'}},
   {headerName: "Plant Name", field: "plantName"},
   {headerName: "Plant Description", field: "plantDescrip", wrapText: true},
   {headerName: "Plant Water Amount", field: "plantWater" },
@@ -11,10 +11,19 @@ var columnDefs = [
 // let the grid know which columns and what data to use
 var gridOptions = {
       rowHeight: 200,
+      headerHeight: 75,
       pagination: true,
       paginationPageSize: 10,
+      rowClass: 'row-class',
+      getRowClass: params => {
+        if (params.node.rowIndex % 2 === 0) {
+          return 'evens';
+        }
+        else {
+          return 'odds';
+        }
+      },
       defaultColDef: {
-        resizable: true,
         sortable: true, 
         filter: true,
         paginationAutoPageSize: true,
@@ -22,6 +31,10 @@ var gridOptions = {
     },
   columnDefs: columnDefs
 };
+
+if (this.gridOptions.api) {
+    this.gridOptions.api.setFilterModel(null);
+}
 
 function setAutoHeight() {
   gridOptions.api.setDomLayout('autoHeight');
