@@ -37,11 +37,11 @@ body {
 }
 /* ----- */
 
+
 .carousel-inner img {
   width: 100%;
   height: 100%;
 }
-
 
 .carousel-caption {
   position: absolute;
@@ -84,6 +84,11 @@ body {
 .social-heading {
   font-weight: bold;
 }
+
+.d-flex {
+  justify-content: center !important;
+}
+
 
 /* Newsletter */
 
