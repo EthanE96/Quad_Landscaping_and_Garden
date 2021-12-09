@@ -56,7 +56,7 @@ var gridOptions = {
   columnDefs: columnDefs
 }
 
-function newPlantButto(){
+function newPlantButton(){
   const imageUrlEle = document.getElementById("imageURLEle").value;
   const plantNameEle = document.getElementById("plantNameEle").value;
   const plantDescripEle = document.getElementById("plantDescripEle").value;

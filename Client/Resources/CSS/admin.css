@@ -74,7 +74,7 @@ body {
 .evens{
   font-family: "Poppins", sans-serif !important;
   font-size: 125% !important;
-  border-color: white !important;
+  background-color: rgb(219, 219, 219);
 }
 
 .odds{
@@ -111,5 +111,8 @@ body {
 /* ----- */
 
 /* Delete Plant */
-
+#button-2 button {
+	margin: auto;
+	padding-right: 20%;
+}
 /* ----- */
