@@ -94,6 +94,8 @@ body {
 
 .newsletter {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: -50px;
   padding-top: 50px;
   padding-bottom: 25px;
   background-color: rgb(77, 74, 74);
