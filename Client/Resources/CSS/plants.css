@@ -33,11 +33,7 @@ body {
 }
 
 .active {
-  color: var(--green);
-}
-
-.btn-outline-success {
-  background-color: var(--green);
+  color: var(--green) !important;
 }
 /* ----- */
 
@@ -62,6 +58,7 @@ body {
 /* AG Grid */
 #myGrid{
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .ag-pivot-off .ag-header-cell-label {
@@ -81,20 +78,43 @@ body {
 }
 /* ----- */
 
-
+/* Footer */
 footer {
-  background-color: #3f3f3f;
+  background-color: var(--gray);
   color: #d5d5d5;
   padding-top: 2rem;
 }
 
-.list-unstyled li a {
-  text-decoration: none;
-  color: #d5d5d5;
+.footer-img{
+  width: 70%;
+  margin-top: 5%;
 }
 
+@media screen and (max-width: 700px){  
+  .footer-img{
+    width: 50%;
+  }
+}
+
+.list-unstyled li{
+  padding-top: 8%;
+}
+
+.list-unstyled li a {
+  text-decoration: none;
+  color: white;
+}
 .list-unstyled li a:hover {
-  text-decoration: underline;
+  color: var(--green);
+}
+
+.list-inline-item img {
+  width: 25%;
+}
+
+.col-lg-4 h6{
+  color: white;
+  font: 15px;
 }
 
 .bg-transparent {
@@ -104,7 +124,23 @@ footer {
 .border-dark {
   background-color: #d5d5d5 !important;
 }
-
 .border-end-0 {
   border-right: 0;
 }
+
+.mc-field-group {
+  padding-right: 30%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  float: right;
+  padding-bottom: 8px;
+}
+
+.datefield{
+  float: right;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
+}
+/* ----- */

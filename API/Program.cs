@@ -15,9 +15,6 @@ namespace api
     {
         public static void Main(string[] args)
         {
-            ISeedPlant temp = new SavePlant();
-            temp.SeedData();
-            
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -5,13 +5,6 @@
   --green: #35c12b;
 }
 
-/* Possible fix to the NavBar issue */
-/* @media (max-width: 2000px) {
-  body {
-    padding-top: 0px;
-  }
-} */
-
 html,
 body {
   height: 100%;
@@ -31,7 +24,7 @@ body {
 }
 
 .navbar-nav li :hover {
-  color: var(--green);
+  color: var(--green)
 }
 
 .nav-link {
@@ -40,11 +33,7 @@ body {
 }
 
 .active {
-  color: var(--green);
-}
-
-.btn-outline-success {
-  background-color: var(--green);
+  color: var(--green) !important;
 }
 /* ----- */
 
@@ -148,12 +137,8 @@ footer {
 
 .col-lg-4 h6{
   color: white;
+  font: 15px;
 }
-
-.col-lg-4 p {
-  color: white;
-}
-
 
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0) !important;
@@ -164,5 +149,21 @@ footer {
 }
 .border-end-0 {
   border-right: 0;
+}
+
+.mc-field-group {
+  padding-right: 30%;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  float: right;
+  padding-bottom: 8px;
+}
+
+.datefield{
+  float: right;
+}
+
+.button {
+  font-family: "Poppins", sans-serif;
 }
 /* ----- */

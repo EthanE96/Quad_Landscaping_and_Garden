@@ -33,11 +33,7 @@ body {
 }
 
 .active {
-  color: var(--green);
-}
-
-.btn-outline-success {
-  background-color: var(--green);
+  color: var(--green) !important;
 }
 /* ----- */
 

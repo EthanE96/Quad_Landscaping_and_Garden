@@ -35,12 +35,20 @@ var gridOptions = {
 if (this.gridOptions.api) {
     this.gridOptions.api.setFilterModel(null);
 }
+ 
+//Search bar filter
+function restoreFromHardCoded(value) {
+  var hardcodedFilter = {
+    plantName: { type: 'contains', filter: value },
+  };
+  gridOptions.api.setFilterModel(hardcodedFilter);
+}
 
+//Auto hight grid
 function setAutoHeight() {
   gridOptions.api.setDomLayout('autoHeight');
   document.querySelector('#myGrid').style.height = '';
 }
-
 
 // setup the grid after the page has finished loading
 document.addEventListener('DOMContentLoaded', function() {
@@ -54,6 +62,7 @@ fetch('https://quadlg-api.herokuapp.com/api/plants')
       .then(data => {
         console.log(data)
         gridOptions.api.setRowData(data);
+        restoreFromHardCoded();
         gridOptions.api.sizeColumnsToFit();
         gridOptions.api.setDomLayout('autoHeight');
         document.querySelector('#myGrid').style.height = '';
