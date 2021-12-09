@@ -60,7 +60,7 @@ body {
 
 /* contact form */
 .contact-heading {
-  font-size: 650%;
+  font-size: 650% !important;
   font-weight: bold;
 }
 
@@ -84,16 +84,6 @@ body {
 .social-heading {
   font-weight: bold;
 }
-
-.instagram-post{
-  text-align: center;
-}
-
-.posts{
-  display: inline-block;
-}
-
-
 
 /* Newsletter */
 
