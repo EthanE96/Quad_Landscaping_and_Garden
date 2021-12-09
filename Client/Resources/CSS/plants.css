@@ -71,16 +71,11 @@ body {
 }
 
 .evens{
-  background-color: var(--gray) !important;
-  color: white !important;
   font-family: "Poppins", sans-serif !important;
   font-size: 125% !important;
-  border-color: white;
 }
 
 .odds{
-  background-color: #474747 !important;
-  color: white !important;
   font-family: "Poppins", sans-serif !important;
   font-size: 125% !important;
 }
